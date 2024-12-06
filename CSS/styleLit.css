@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.titre {
+    z-index: 100000000000;
+    position: absolute  ;
+    width: 100vw;
+    aspect-ratio: 12/1;
+    background-color: #FF0000;
+    font-family: "Agency FB", sans-serif;
+    font-size: 7vw;
+}
+
+#warning {
+    position: fixed;
+    top: 0;
+    left: 20.5vw;
+    animation: spin 3s infinite linear;
+    animation-play-state: paused;
+}
+
+#para {
+    position: absolute;
+    width: 80vw;
+    top: 11vw;
+    left: 40vw;
+    font-family: Algerian,sans-serif;
+    font-size: 8vw;
+}
+
+.reverse{
+    position: absolute;
+    transform: scale(1, -1);
+}
+#bd {
+    position: absolute;
+    top: 0;
+    height: 600vh;
+    width: 40vw;
+}
