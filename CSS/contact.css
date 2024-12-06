@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Font";
+    src: url("../fonts/Rock Show Whiplash.ttf") format('truetype');
+}
+body {
+    background-image:url("../image/hypnose.gif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Font", serif ;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    animation: blink 1s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    animation: continuousZoom 1s infinite;
+}
+
+@keyframes continuousZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.contact-form {
+    background-color: yellow;
+    padding: 20px;
+    border: 5px solid black;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    margin: 10px 0;
+    color: blue;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 50px;
+    border: 2px solid red;
+    font-size: 18px;
+    background-color: orange;
+    color: purple;
+}
+
+button {
+    background-color: blue;
+    color: yellow;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 3px solid red;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: purple;
+    color: lime;
+}
