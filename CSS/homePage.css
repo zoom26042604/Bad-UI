@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Font";
+    src: url("../fonts/Rock Show Whiplash.ttf") format('truetype');
+}
+body {
+    background-color: lime;
+    color: red;
+    font-family: "Font", sans-serif;
+
+}
+.navbar {
+    background-color: yellow;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orange;
+    padding: 5px 10px;
+    border: 2px solid red;
+}
+
+.navbar a:hover {
+    background-color: purple;
+    color: lime;
+}
+.title{
+    background-color: white;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    animation: blink 0.1s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    animation: continuousZoom 1s infinite;
+}
+
+@keyframes continuousZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.button {
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    background-image: url('https://via.placeholder.com/300x200');
+    background-size: cover;
+    margin: 20px;
+    border: 50px solid deeppink;
+    animation: rotate 1s linear infinite;
+
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.text {
+    font-size: 18px;
+    background-color: purple;
+    color: purple;
+    padding: 10px;
+    margin: 10px;
+}
